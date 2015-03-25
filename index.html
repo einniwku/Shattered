@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHATTERED</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   </head>
   <body>
@@ -12,7 +13,7 @@
   		<div class="header-logo">
   			<img src="img/shattered.png">
   		</div>
-
+      <a href="#top" id="navToggle">MENU</a>
   		<nav>
   			<ul class="nav-title">
 	  			<li><a  class="is-selected" href="index.html">Home</a></li>
@@ -24,7 +25,19 @@
 	  		</ul>
   		</nav>
   		<div class="header-img">
-  			<img src="img/glass.png" width="100%">
+        <picture>
+          <source 
+            media="(min-width: 600px)" 
+            srcset="img/glass.jpg 1x, 
+                    img/glass.jpg 2x,
+                    img/glass.jpg 3x">
+          <source 
+            srcset="img/glassCrop.jpg 1x, 
+                    img/glassCrop.jpg 2x">
+    			<img 
+            src="img/glass.jpg" 
+            srcset="img/glass.jpg 1x, img/glass.jpg 2x" width="100%" height="auto">
+        </picture>
   		</div>
   	</div>
   	<div class="about">
@@ -40,5 +53,9 @@
   			<p class="about-description">Using the concept of shattered glass, we recreated a surface that gives off the perception of glass shattering when energy is consumed. The speed and intensity of the shattering gives the users input on the amount of energy consumed; and the sections of the surface represents different areas of the building. </p>
   		</div>
   	</div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/hamburger.js"></script>
+
   </body>
 </html>

@@ -1,6 +1,18 @@
 body{
 	font-family: 'Lato', sans-serif;
 	margin: 0;
+	width: 100%;
+	height: auto;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+*, *::after, *::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .header{
@@ -16,7 +28,7 @@ body{
 	text-align: center;
 }
 
-nav{
+nav, #navToggle{
 	width: 100%;
 	height: auto;
 	/*padding-left: 16em;*/
@@ -24,6 +36,16 @@ nav{
 	border-bottom: 1.5px solid #cacaca;
 	z-index: 2;
 	position: relative;
+}
+
+#navToggle {
+	display: none;
+	height: 2em;
+	background-color: #fff;
+	text-decoration: none;
+	color: #495e66;
+	font-weight: 700;
+	margin-top: 1em;
 }
 
 .fixed {
@@ -95,6 +117,7 @@ h3{
 .names{
 	text-align: center;
 	padding: 0;
+	display: block;
 }
 
 .names li{
@@ -106,9 +129,23 @@ h3{
 
 .description{
 	margin: 2em 18em;
+	display: block;
+}
+
+.description2{
+	margin: 2em 18em;
+	display: block;
 }
 
 .about-description{
+	width: 100%;
+	text-align: left;
+	line-height: 2em;
+	display: block;
+	font-size: 0.9em;
+}
+
+.about-description2{
 	width: 100%;
 	text-align: left;
 	line-height: 2em;
