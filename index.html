@@ -4,26 +4,48 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHATTERED</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/mobile.css">
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   </head>
   <body>
   	<div class="header">
   		<div class="header-logo">
-  			<img src="img/shattered.png">
+  			<a href="index.html"><img src="img/shattered.png"></a>
   		</div>
-      <a href="#top" id="navToggle">MENU</a>
-  		<nav>
-  			<ul class="nav-title">
-	  			<li><a  class="is-selected" href="index.html">Home</a></li>
-	  			<li><a href="phase-i.html">Phase I</a></li>
-	  			<li><a href="phase-ii.html">Phase II</a></li>
-	  			<li><a href="phase-iii.html">Phase III</a></li>
-	  			<li><a href="video.html">Video</a></li>
-	  			<li><a href="config.html">Configurations</a></li>
-	  		</ul>
-  		</nav>
+      <div class="nav-bar">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="phase-i.html">Phase I</a></li>
+          <li><a href="phase-ii.html">Phase II</a></li>
+          <li><a href="phase-iii.html">Phase III</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="config.html">Configurations</a></li>
+        </ul>
+      </div>
+      <div class="mobile-nav-wrapper">
+        <div class="mobile-nav" id="accordion">
+          <div class="panel panel-default">
+            <a class="nav-trigger accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#navs">
+              <div class="hamburger-icon"><span></span><span></span><span></span></div></a>
+          </div>
+
+          <div id="navs" class="panel-collapse collapse">
+            <div class="panel-body mobile-nav-inner">
+              <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="phase-i.html">Phase I</a></li>
+                <li><a href="phase-ii.html">Phase II</a></li>
+                <li><a href="phase-iii.html">Phase III</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="config.html">Configurations</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
   		<div class="header-img">
         <picture>
           <source 
@@ -42,20 +64,18 @@
   	</div>
   	<div class="about">
   		<h1>IAT 337 - Spring 2014</h1>
-  		<h2>
-  			<ul class="names">
-  				<li>Winnie Ku</li>
-  				<li>Annie Wang</li>
-  				<li>Flora Wu</li>
-  			</ul>
-  		</h2>
+			<ul class="names">
+				<li>Winnie Ku</li>
+				<li>Annie Wang</li>
+				<li>Flora Wu</li>
+			</ul>
   		<div class="description">
   			<p class="about-description">Using the concept of shattered glass, we recreated a surface that gives off the perception of glass shattering when energy is consumed. The speed and intensity of the shattering gives the users input on the amount of energy consumed; and the sections of the surface represents different areas of the building. </p>
   		</div>
   	</div>
 
     <script src="js/jquery.js"></script>
-    <script src="js/hamburger.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
   </body>
 </html>
